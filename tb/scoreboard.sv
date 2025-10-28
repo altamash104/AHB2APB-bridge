@@ -10,16 +10,12 @@ read_xtn Pxtn,Pxtn1,pq[$];
 //ahb_xtn hcov;
 //apb_xtn pcov;
 
-
-
 extern function new(string name="scoreboard",uvm_component parent);
 extern task run_phase(uvm_phase phase);
 //extern function void check_data(write_xtn w,read_xtn r);
 //extern fucntion void compare(int HDATA,PDATA,Haddr,Paddr);
 extern function void compare(write_xtn hxtn,read_xtn pxtn);
 extern function void verify(int haddr,int paddr,int hdata,int pdata);
-
-
 
 endclass
 
