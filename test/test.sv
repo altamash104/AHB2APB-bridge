@@ -1,6 +1,6 @@
 class test extends uvm_test;
 
-        `uvm_component_utils(test)
+`uvm_component_utils(test)
 
 //parameters
 ahb_sequencer seqrh;
